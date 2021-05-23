@@ -1,0 +1,8 @@
+name: null
+channels:
+  - defaults
+dependencies:
+  - python=3.8.5
+  - numpy
+  - jupyterlab
+prefix: /Users/javierliro/windproject/Local-Wind-Forecast-Model-/env
