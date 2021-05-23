@@ -5,4 +5,8 @@ dependencies:
   - python=3.8.5
   - numpy
   - jupyterlab
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
 prefix: /Users/javierliro/windproject/Local-Wind-Forecast-Model-/env
