@@ -11,7 +11,7 @@ A beta web application has been developed to display current weather forecasts i
 
 ## 2 Instructions for running the project:
 
-* **1) Data download:** Download the data from the link : xxxx . Files should be copied within the folder of the local repository in a folder called Data/
+* **1) Data download:** Download the data from the followign link and put them within the folder of your local repository in a folder called Data/  : https://drive.google.com/drive/folders/1_C1cMM_k5KHa07NDgnOMmlqUGNNAHbAn?usp=sharing . 
 
 * **2) The file environment.yml:** can be used to create an environment to run the files if needed.
 
