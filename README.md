@@ -9,15 +9,35 @@ After an iterative process of training/testing techniques and feature engineerin
 
 A beta web application has been developed to display current weather forecasts in real time. 
 
-## 2 Instructions for running the project:
+## 2 Instructions for running the project in your computer:
 
-* **1) Data download:** Download the data from the followign link and put them within the folder of your local repository in a folder called Data/  : https://drive.google.com/drive/folders/1_C1cMM_k5KHa07NDgnOMmlqUGNNAHbAn?usp=sharing . 
+* **0) Download the repository** Clone the github repository in a folder in your computer. 
+* **1) Data download:** Download the data from the followign link and put them within the folder of your local repository in a folder called Data/ : https://drive.google.com/drive/folders/1_C1cMM_k5KHa07NDgnOMmlqUGNNAHbAn?usp=sharing . 
 
-* **2) The file environment.yml:** can be used to create an environment to run the files if needed.
+* **2) Package/Envirnoment activation** To install the package needed for the project proceed:
 
-* **3) Development phase :** The development phase of the project is done in the files: 1_DataPreparation.ipynb, 2_EDA.ipynb, 3 FeatEng.ipynb . They can be executed in the order 1,2,3. Each of the files will use some data in csv format from the folder Data/ and generate another csv at the end of the file, that will be used in the following file. Also, the file 3 FeatEng.ipynb will generate a model that will be saved within the route: /Data/model/windpredictor.sav that will be used in the deployment phase to make real-time predictions. 
+**2.1)** Create enviroment wind with the following command: 
+>conda env create --file environment.yml
 
-* **4) Deployment phase :** The deployment phase (web application real time forecasts) is done in the files: app.py , app1.py, app2.py. To execute the app run from the terminal within the folder repository the following: > streamlit run app.py. 
+**2.2)** Activate the enviroment with the following command: 
+>conda activate wind
+
+**2.3)** Install manually the libraries not included in enviroment.yml with the following commands: 
+>pip install streamlit
+>pip install datetime. 
+
+Remark: For this project we also use the libraries pickle and pillow, that are already included in the python version installed so no need to further installation. 
+
+* **3) Development phase :** The development phase of the project is done in the following jupyter-lab files: 1_DataPreparation.ipynb, 2_EDA.ipynb, 3 FeatEng.ipynb . To execute and navigate into the files you can use the following command:
+>jupyter-lab
+
+Remark: The files can be executed in the order 1,2,3. Each of the files will use some data in csv format from the folder Data/ and generate another csv at the end of the file, that will be used in the following file. Also, the file 3 FeatEng.ipynb will generate a model that will be saved within the route: /Data/model/windpredictor.sav that will be used in the deployment phase to make real-time predictions. 
+
+* **4) Deployment phase :** The deployment phase (web application real time forecasts) is done in the files: app.py , app1.py, app2.py. To execute the app run the following command:
+
+> streamlit run app.py. 
+
+
 
 ## 3 Files in the repository
 
