@@ -9,4 +9,10 @@ dependencies:
   - matplotlib
   - seaborn
   - scikit-learn
+  - pickle
+  - streamlit
+  - requests
+  - datetime
+  - PIL
+  - scipy
 prefix: /Users/javierliro/windproject/Local-Wind-Forecast-Model-/env
